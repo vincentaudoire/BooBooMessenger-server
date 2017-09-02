@@ -3,6 +3,10 @@
 	"ignore": "test",
 	"package": [
 		{
+			"path": "appengine/cloudsql",
+			"revision": ""
+		},
+		{
 			"checksumSHA1": "QeKwBtN2df+j+4stw3bQJ6yO4EY=",
 			"path": "github.com/gin-contrib/sse",
 			"revision": "22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae",
@@ -33,10 +37,64 @@
 			"versionExact": "v1.2"
 		},
 		{
+			"checksumSHA1": "N5D1aYGZh5OUVArhFW0voidER3A=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "26471af196a17ee75a22e6481b5a5897fb16b081",
+			"revisionTime": "2017-08-22T21:48:09Z"
+		},
+		{
 			"checksumSHA1": "yqF125xVSkmfLpIVGrLlfE05IUk=",
 			"path": "github.com/golang/protobuf/proto",
 			"revision": "5afd06f9d81a86d6e3bb7dc702d6bd148ea3ff23",
 			"revisionTime": "2017-09-01T04:27:39Z"
+		},
+		{
+			"checksumSHA1": "Y80EASFjCaCxHdfPxmN4Wc2n1BM=",
+			"path": "github.com/google/uuid",
+			"revision": "7e072fc3a7be179aee6d3359e46015aa8c995314",
+			"revisionTime": "2017-08-14T14:36:39Z"
+		},
+		{
+			"checksumSHA1": "A3ymiEhz0WaT+sfK1aJhlqhf41o=",
+			"path": "github.com/lib/pq",
+			"revision": "e42267488fe361b9dc034be7a6bffef5b195bceb",
+			"revisionTime": "2017-08-10T06:12:20Z"
+		},
+		{
+			"checksumSHA1": "q5SZBWFVC3wOIzftf+l/h5WLG1k=",
+			"path": "github.com/lib/pq/oid",
+			"revision": "e42267488fe361b9dc034be7a6bffef5b195bceb",
+			"revisionTime": "2017-08-10T06:12:20Z"
+		},
+		{
+			"checksumSHA1": "kdvsDmguft5CZiHCmjaaBwoVT08=",
+			"path": "github.com/mattes/migrate",
+			"revision": "804f9c2d4f403bdea957346b5c8ede7d66b4ba37",
+			"revisionTime": "2017-08-14T21:01:06Z"
+		},
+		{
+			"checksumSHA1": "6QePtWUFN9x9U/Y6OzcENUUudmM=",
+			"path": "github.com/mattes/migrate/database",
+			"revision": "804f9c2d4f403bdea957346b5c8ede7d66b4ba37",
+			"revisionTime": "2017-08-14T21:01:06Z"
+		},
+		{
+			"checksumSHA1": "Q9IScpP6lp1CaPqYoFGVrJjmZcE=",
+			"path": "github.com/mattes/migrate/database/postgres",
+			"revision": "804f9c2d4f403bdea957346b5c8ede7d66b4ba37",
+			"revisionTime": "2017-08-14T21:01:06Z"
+		},
+		{
+			"checksumSHA1": "kIHQkF+Nm0LBPppYbchll3njidY=",
+			"path": "github.com/mattes/migrate/source",
+			"revision": "804f9c2d4f403bdea957346b5c8ede7d66b4ba37",
+			"revisionTime": "2017-08-14T21:01:06Z"
+		},
+		{
+			"checksumSHA1": "8uIdYxIjjUB1z65ejfpumt7oAFY=",
+			"path": "github.com/mattes/migrate/source/file",
+			"revision": "804f9c2d4f403bdea957346b5c8ede7d66b4ba37",
+			"revisionTime": "2017-08-14T21:01:06Z"
 		},
 		{
 			"checksumSHA1": "U6lX43KDDlNOn+Z0Yyww+ZzHfFo=",
