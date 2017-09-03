@@ -3,6 +3,7 @@ package rest
 import (
 	"BooBooMessenger-server/model"
 	"BooBooMessenger-server/repository"
+	"fmt"
 	"log"
 	"net/http"
 
@@ -27,7 +28,7 @@ func (controller *MessageController) GetAllMessage(c *gin.Context) {
 		log.Panic(err)
 	}
 
-	c.JSON(200, messages)
+	c.JSON(http.StatusOK, messages)
 }
 
 // MarkMessageAsRead .
@@ -49,6 +50,12 @@ func (controller *MessageController) SaveNewMessage(c *gin.Context) {
 	err := c.BindJSON(&message)
 
 	if err != nil {
+		c.JSON(http.StatusBadRequest, err.Error())
+		log.Panic(err)
+	}
+
+	if message.Message == "" {
+		err = fmt.Errorf("Expected message")
 		c.JSON(http.StatusBadRequest, err.Error())
 		log.Panic(err)
 	}
