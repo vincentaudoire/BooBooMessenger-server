@@ -77,8 +77,6 @@ func (r *MessageRepository) MarkMessageAsRead(messageID string) error {
 // SaveMessage .
 func (r *MessageRepository) SaveMessage(message *model.Message) (*model.Message, error) {
 
-	fmt.Printf("Savings new message")
-
 	messageToSave := &model.Message{
 		ID:       uuid.New().String(),
 		Message:  message.Message,

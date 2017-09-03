@@ -5,7 +5,6 @@ import (
 	"BooBooMessenger-server/repository"
 	"BooBooMessenger-server/rest"
 	"database/sql"
-	"fmt"
 	"log"
 	"os"
 
@@ -21,11 +20,9 @@ var db *sql.DB
 
 func main() {
 
-	fmt.Printf("BooBooMessenger")
-
 	databaseURL := os.Getenv("DATABASE_URL")
 	if databaseURL == "" {
-		panic("DATABASE_URL not set")
+		log.Fatal("DATABASE_URL not set")
 	}
 
 	// Setting up the database

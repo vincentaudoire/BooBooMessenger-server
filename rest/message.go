@@ -3,6 +3,7 @@ package rest
 import (
 	"BooBooMessenger-server/model"
 	"BooBooMessenger-server/repository"
+	"log"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -23,7 +24,7 @@ func (controller *MessageController) GetAllMessage(c *gin.Context) {
 	messages, err := controller.r.GetAllMessages()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, err.Error())
-		panic(err)
+		log.Panic(err)
 	}
 
 	c.JSON(200, messages)
@@ -36,7 +37,7 @@ func (controller *MessageController) MarkMessageAsRead(c *gin.Context) {
 
 	if err != nil {
 		c.JSON(http.StatusNotFound, err.Error())
-		panic(err)
+		log.Panic(err)
 	}
 
 }
@@ -49,13 +50,13 @@ func (controller *MessageController) SaveNewMessage(c *gin.Context) {
 
 	if err != nil {
 		c.JSON(http.StatusBadRequest, err.Error())
-		panic(err)
+		log.Panic(err)
 	}
 
 	savedMessage, err := controller.r.SaveMessage(&message)
 	if err != nil {
 		c.JSON(http.StatusBadRequest, err.Error())
-		panic(err)
+		log.Panic(err)
 	}
 
 	c.JSON(http.StatusCreated, savedMessage)
