@@ -41,6 +41,7 @@ func (controller *MessageController) MarkMessageAsRead(c *gin.Context) {
 		log.Panic(err)
 	}
 
+	c.JSON(http.StatusOK, nil)
 }
 
 // SaveNewMessage .
