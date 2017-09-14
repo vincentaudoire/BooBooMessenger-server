@@ -1,0 +1,10 @@
+language: go
+
+install:
+        # Getting go vendor
+        - go get -u github.com/kardianos/govendor
+script:
+        - govendor add +local
+        - govendor test +local
+go:
+        - 1.9

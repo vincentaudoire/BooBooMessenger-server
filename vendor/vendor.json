@@ -3,8 +3,39 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "fem+Y8dPxl+BZ6DSab6kdJxTYMM=",
+			"path": "BooBooMessenger-server",
+			"revision": "cac997de7413634b2b98444a80adacf954dd851a",
+			"revisionTime": "2017-09-14T06:22:48Z"
+		},
+		{
+			"checksumSHA1": "9nAeKeNbKKgsEbG3uBPkxGc6IR4=",
+			"path": "BooBooMessenger-server/model",
+			"revision": "cac997de7413634b2b98444a80adacf954dd851a",
+			"revisionTime": "2017-09-14T06:22:48Z"
+		},
+		{
+			"checksumSHA1": "qSrJ2ude5gFer5eFtPPPCoFhhKc=",
+			"path": "BooBooMessenger-server/repository",
+			"revision": "cac997de7413634b2b98444a80adacf954dd851a",
+			"revisionTime": "2017-09-14T06:22:48Z"
+		},
+		{
+			"checksumSHA1": "GCLz/B0dP80nIsj7k88NpxkaCf0=",
+			"path": "BooBooMessenger-server/rest",
+			"revision": "cac997de7413634b2b98444a80adacf954dd851a",
+			"revisionTime": "2017-09-14T06:22:48Z"
+		},
+		{
 			"path": "appengine/cloudsql",
 			"revision": ""
+		},
+		{
+			"checksumSHA1": "OFu4xJEIjiI8Suu+j/gabfp+y6Q=",
+			"origin": "github.com/stretchr/testify/vendor/github.com/davecgh/go-spew/spew",
+			"path": "github.com/davecgh/go-spew/spew",
+			"revision": "890a5c3458b43e6104ff5da8dfa139d013d77544",
+			"revisionTime": "2017-07-05T02:17:15Z"
 		},
 		{
 			"checksumSHA1": "QeKwBtN2df+j+4stw3bQJ6yO4EY=",
@@ -103,6 +134,19 @@
 			"revisionTime": "2017-03-22T23:44:13Z"
 		},
 		{
+			"checksumSHA1": "zKKp5SZ3d3ycKe4EKMNT0BqAWBw=",
+			"origin": "github.com/stretchr/testify/vendor/github.com/pmezard/go-difflib/difflib",
+			"path": "github.com/pmezard/go-difflib/difflib",
+			"revision": "890a5c3458b43e6104ff5da8dfa139d013d77544",
+			"revisionTime": "2017-07-05T02:17:15Z"
+		},
+		{
+			"checksumSHA1": "mGbTYZ8dHVTiPTTJu3ktp+84pPI=",
+			"path": "github.com/stretchr/testify/assert",
+			"revision": "890a5c3458b43e6104ff5da8dfa139d013d77544",
+			"revisionTime": "2017-07-05T02:17:15Z"
+		},
+		{
 			"checksumSHA1": "0FCBLTqGOxgifAKfS0360iLTZR4=",
 			"path": "github.com/ugorji/go/codec",
 			"revision": "8c0409fcbb70099c748d71f714529204975f6c3f",
@@ -113,6 +157,12 @@
 			"path": "golang.org/x/sys/unix",
 			"revision": "a07a691ac871746ae690ccf3ab217363b2144531",
 			"revisionTime": "2017-08-30T09:57:17Z"
+		},
+		{
+			"checksumSHA1": "uR1qI7p56R7u43DJGoYtyRleQpA=",
+			"path": "gopkg.in/DATA-DOG/go-sqlmock.v1",
+			"revision": "b983233bc0bbea4dc6e8ec8c8c923d935765ffec",
+			"revisionTime": "2017-02-21T15:59:18Z"
 		},
 		{
 			"checksumSHA1": "P/k5ZGf0lEBgpKgkwy++F7K1PSg=",

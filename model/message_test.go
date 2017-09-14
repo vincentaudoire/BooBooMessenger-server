@@ -1,6 +1,7 @@
-package model
+package model_test
 
 import (
+	"BooBooMessenger-server/model"
 	"encoding/json"
 	"testing"
 	"time"
@@ -10,7 +11,7 @@ import (
 )
 
 func TestMarshalJSONWithNullPrinted(t *testing.T) {
-	message := Message{
+	message := model.Message{
 		ID:       "123",
 		Message:  "Hello world",
 		Received: time.Now().UTC(),
@@ -36,7 +37,7 @@ func TestMarshalJSONWithPrinted(t *testing.T) {
 
 	printedTime := time.Now().UTC()
 
-	message := Message{
+	message := model.Message{
 		ID:       "123",
 		Message:  "Hello world",
 		Received: time.Now(),

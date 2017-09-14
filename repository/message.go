@@ -1,10 +1,11 @@
 package repository
 
 import (
-	"BooBooMessenger-server/model"
 	"database/sql"
 	"fmt"
 	"time"
+
+	"BooBooMessenger-server/model"
 
 	"github.com/google/uuid"
 )
