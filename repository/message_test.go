@@ -1,9 +1,10 @@
 package repository_test
 
 import (
-	messageRepository "BooBooMessenger-server/repository"
 	"testing"
 	"time"
+
+	messageRepository "github.com/vincentaudoire/BooBooMessenger-server/repository"
 
 	"github.com/stretchr/testify/assert"
 	sqlmock "gopkg.in/DATA-DOG/go-sqlmock.v1"

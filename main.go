@@ -1,12 +1,13 @@
 package main
 
 import (
-	"BooBooMessenger-server/model"
-	"BooBooMessenger-server/repository"
-	"BooBooMessenger-server/rest"
 	"database/sql"
 	"log"
 	"os"
+
+	"github.com/vincentaudoire/BooBooMessenger-server/model"
+	"github.com/vincentaudoire/BooBooMessenger-server/repository"
+	"github.com/vincentaudoire/BooBooMessenger-server/rest"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"

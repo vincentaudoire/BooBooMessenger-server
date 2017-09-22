@@ -1,11 +1,12 @@
 package rest
 
 import (
-	"BooBooMessenger-server/model"
-	"BooBooMessenger-server/repository"
 	"fmt"
 	"log"
 	"net/http"
+
+	"github.com/vincentaudoire/BooBooMessenger-server/model"
+	"github.com/vincentaudoire/BooBooMessenger-server/repository"
 
 	"github.com/gin-gonic/gin"
 )

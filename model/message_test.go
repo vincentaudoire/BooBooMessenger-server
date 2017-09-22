@@ -1,10 +1,11 @@
 package model_test
 
 import (
-	"BooBooMessenger-server/model"
 	"encoding/json"
 	"testing"
 	"time"
+
+	"github.com/vincentaudoire/BooBooMessenger-server/model"
 
 	"github.com/go-sql-driver/mysql"
 	"github.com/stretchr/testify/assert"

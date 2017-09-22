@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"BooBooMessenger-server/model"
+	"github.com/vincentaudoire/BooBooMessenger-server/model"
 
 	"github.com/google/uuid"
 )
