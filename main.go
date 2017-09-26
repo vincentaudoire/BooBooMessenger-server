@@ -21,6 +21,8 @@ var db *sql.DB
 
 func main() {
 
+	println("Starting booboo messenger")
+
 	databaseURL := os.Getenv("DATABASE_URL")
 	if databaseURL == "" {
 		log.Fatal("DATABASE_URL not set")
@@ -59,13 +61,19 @@ func main() {
 	}
 
 	messageRepository := repository.New(db)
+	printerRepository := repository.NewPrinterRepository(db)
 
 	messageController := rest.NewMessageController(messageRepository)
+	printerController := rest.NewPrinterController(&printerRepository)
 
 	// Setting up the router
 	router := gin.Default()
+	router.POST("/printer", printerController.RegisterNewPrinter)
+	router.GET("/printer/messages", printerController.GetAllMessages)
+
 	router.GET("/messages", messageController.GetAllMessage)
 	router.PUT("messages/:id/printed", messageController.MarkMessageAsRead)
 	router.POST("/messages", messageController.SaveNewMessage)
+
 	router.Run() // listen and serve on 0.0.0.0:8080
 }
